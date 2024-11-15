@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--highlight: #ba945754;
+	--blue: #6788c5;
+	--black: #0c1316;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1200px;
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	font-size: 18px;
+	padding: 60px 0;
+	gap: 20px;
+	color: var(--black);
+}
+
+a {
+	color: var(--blue);
+	width: fit-content;
+	text-decoration: none;
+}
+
+a:hover {
+	filter: hue-rotate(180deg);
+}
+
+h1,
+h2 {
+	font-size: 32px;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0 0 10px 0;
+}
+
+p {
+	margin: 0;
+}
+
+article,
+.sidebar {
+	padding: 20px;
+}
+
+.sidebar {
+	width: 350px;
+}
+
+.sidebar nav {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+
+.sidebar .quickinfo {
+	background: #dcdcdc;
+	padding: 10px;
+	margin: 0 -10px 20px -10px;
+}
+
+.sidebar .quickinfo p {
+	font-size: 16px;
+}
+
+.sidebar form {
+	margin: 0 -10px;
+}
+
+.sidebar form input {
+	background-color: #dcdcdc;
+	box-sizing: border-box;
+	border: none;
+	font-family: inherit;
+	padding: 10px;
+	width: 100%;
+	font-size: 16px;
+}
+
+.sidebar form input:focus {
+	outline: 2px var(--blue) solid;
+}
+
+article {
+	flex: 1;
+}
+
+article .paths {
+	margin-bottom: 20px;
+	display: flex;
+	font-size: 16px;
+}
+
+article .paths a {
+	font-style: italic;
+	display: block;
+}
+
+article .paths a:before {
+	content: ">";
+	color: black;
+	margin: 0 10px;
+}
+
+article .paths a:first-child:before {
+	content: "";
+	margin: 0;
+}
+
+article p {
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+article p .cite {
+	font-size: 12px;
+	vertical-align: super;
+}
+
+article p .cite:before {
+	content: "[";
+}
+
+article p .cite:after {
+	content: "]";
+}
+
+article p .highlight {
+	background: var(--highlight);
+	padding: 0 3px;
+	margin: -3px;
+}
+
+article ol#citations {
+	list-style: none;
+	padding: 0;
+}
+
+article ol#citations li {
+	margin-left: 50px;
+	margin-bottom: 10px;
+}
+
+article ol#citations li .number {
+	position: absolute;
+	margin-left: -50px;
+}
