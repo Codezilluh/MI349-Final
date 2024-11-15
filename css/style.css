@@ -4,6 +4,7 @@
 	--highlight: #ba945754;
 	--blue: #6788c5;
 	--black: #0c1316;
+	--gray: #dcdcdc;
 }
 
 body {
@@ -58,7 +59,7 @@ article,
 }
 
 .sidebar .quickinfo {
-	background: #dcdcdc;
+	background: var(--gray);
 	padding: 10px;
 	margin: 0 -10px 20px -10px;
 }
@@ -69,20 +70,36 @@ article,
 
 .sidebar form {
 	margin: 0 -10px;
+	display: flex;
+	align-items: center;
 }
 
 .sidebar form input {
-	background-color: #dcdcdc;
+	background-color: var(--gray);
 	box-sizing: border-box;
 	border: none;
 	font-family: inherit;
 	padding: 10px;
-	width: 100%;
 	font-size: 16px;
+	flex: 1;
 }
 
 .sidebar form input:focus {
 	outline: 2px var(--blue) solid;
+}
+
+.sidebar form button {
+	width: 24px;
+	height: 24px;
+	border: none;
+	background-color: var(--gray);
+	background-image: url(../images/search_icon.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	position: relative;
+	margin-right: 10px;
+	margin-left: -34px;
 }
 
 article {
@@ -148,4 +165,5 @@ article ol#citations li {
 article ol#citations li .number {
 	position: absolute;
 	margin-left: -50px;
+	user-select: none;
 }
