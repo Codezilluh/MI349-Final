@@ -5,6 +5,7 @@
 	--blue: #6788c5;
 	--black: #0c1316;
 	--gray: #dcdcdc;
+	--darkgray: #696969;
 }
 
 body {
@@ -56,6 +57,11 @@ article,
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 40px;
+}
+
+.sidebar nav hr {
+	width: 100%;
+	border: 1px solid var(--gray);
 }
 
 .sidebar .quickinfo {
@@ -155,6 +161,7 @@ article p .highlight {
 article ol#citations {
 	list-style: none;
 	padding: 0;
+	font-size: 16px;
 }
 
 article ol#citations li {
@@ -166,4 +173,39 @@ article ol#citations li .number {
 	position: absolute;
 	margin-left: -50px;
 	user-select: none;
+}
+
+article .info {
+	color: var(--darkgray);
+	font-size: 14px;
+	font-style: italic;
+}
+
+article .info address {
+	display: inline;
+}
+
+article #user-box {
+	display: flex;
+	float: right;
+	/* background: var(--gray); */
+	padding: 10px;
+	gap: 10px;
+	text-align: right;
+	align-items: center;
+	line-height: 1;
+	font-size: 16px;
+}
+
+article #user-box .avatar {
+	width: 48px;
+	height: 48px;
+	background-image: url(../images/fluffy-paincake.png);
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+}
+
+article #user-box div a {
+	font-size: 14px;
 }
