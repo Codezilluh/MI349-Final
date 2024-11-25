@@ -6,6 +6,7 @@
 		<title>NotWikipedia</title>
 
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/script.js"></script>
 	</head>
 
 	<body>
@@ -13,13 +14,13 @@
 			<h1>NotWikipedia</h1>
 
 			<nav>
-				<a href="">Home</a>
+				<a href="/">Home</a>
 				<a href="">Next article</a>
 				<a href="">Random article</a>
 				<a href="">Previous article</a>
 			</nav>
 
-			<div class="quickinfo">
+			<div class="quickinfo mobile-hidden">
 				<h3>QuickInfo</h3>
 				<p>This site is better than Wikipedia 🤮, it is NotWikipedia.</p>
 			</div>
@@ -31,13 +32,6 @@
 		</div>
 
 		<article>
-			<div id="user-box">
-				<div class="avatar"></div>
-				<div>
-					<div class="username">fluffy_paincake</div>
-					<a href="">Logout</a>
-				</div>
-			</div>
 			<h2>Welcome!</h2>
 			<div class="paths">
 				<a href="">Wiki</a>
@@ -54,14 +48,23 @@
 					href="#1"
 					class="cite"
 					>1</a
-				>. NotWikipedia has a man-made summary (called QuickInfo) that appears on the left of all pages, giving you even faster access to information.
+				>. NotWikipedia has a man-made summary (called QuickInfo) that appears on all pages, giving you even faster access to information.
 			</p>
 			<ol id="citations">
 				<li id="1"><span class="number">[1]</span>Citations will go here!</li>
 			</ol>
 			<div class="info">
-				Last modified <time datetime="11/24/2024 4:56PM">11/24/2024 4:56PM</time> by
+				Last modified <time datetime="11/24/2024 8:06PM">11/24/2024 8:06PM</time> by
 				<a href=""><address>@fluffy_paincake</address></a>
+			</div>
+			<div id="user-box">
+				<div id="toggle">QuickInfo</div>
+				<div class="spacer"></div>
+				<div class="avatar"></div>
+				<div>
+					<div class="username">fluffy_paincake</div>
+					<a href="">Logout</a>
+				</div>
 			</div>
 		</article>
 	</body>
