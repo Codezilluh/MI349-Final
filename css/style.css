@@ -189,7 +189,7 @@ article #user-box {
 	display: flex;
 	float: right;
 	/* background: var(--gray); */
-	padding: 10px;
+	padding: 10px 0;
 	gap: 10px;
 	text-align: right;
 	align-items: center;
@@ -200,7 +200,7 @@ article #user-box {
 article #user-box .avatar {
 	width: 48px;
 	height: 48px;
-	background-image: url(../images/fluffy-paincake.png);
+	background-image: url(../images/fluffy_paincake.png);
 	background-size: cover;
 	background-position: center;
 	border-radius: 10px;
