@@ -246,6 +246,24 @@ article #user-box .spacer {
 	flex: 1;
 }
 
+article .embed {
+	background: var(--gray);
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+article .embed.right {
+	float: right;
+	margin-left: 20px;
+	width: 350px;
+}
+
+article .embed img {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
 ::selection {
 	background: var(--highlight);
 	color: var(--black);
@@ -269,6 +287,12 @@ article #user-box .spacer {
 	.sidebar {
 		width: 300px;
 		min-width: 300px;
+	}
+
+	article .embed.right {
+		float: unset;
+		margin-left: unset;
+		width: unset;
 	}
 }
 
