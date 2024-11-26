@@ -15,9 +15,9 @@
 
 			<nav>
 				<a href="/">Home</a>
-				<a href="/next.html">Next article</a>
+				<a href="/most_viewed.html">Most viewed article</a>
 				<a href="/random.html">Random article</a>
-				<a href="/previous.html">Previous article</a>
+				<a href="/most_edited.html">Most edited article</a>
 			</nav>
 
 			<div class="quickinfo mobile-hidden">
@@ -34,11 +34,11 @@
 		<article>
 			<h2>Page Not Found</h2>
 			<div class="paths">
-				<a href="/wiki">Wiki</a>
+				<a href="/wiki">NotWikipedia</a>
 				<a href="/wiki/missing_pages">Missing Pages</a>
 			</div>
 
-			<p>We are so sorry, but that page does not exist! It's probably our fault, perfection is a work in progress.</p>
+			<p>We are so sorry, but the page "<span id="url"></span>" does not exist! It's probably our fault, perfection is a work in progress.</p>
 			<p>
 				If you would like to make the page, you could do that... sometime in the future when we implement page creation. Yep, sorry, work in progress,
 				yada yada.
@@ -58,5 +58,9 @@
 				</div>
 			</div>
 		</article>
+
+		<script>
+			document.querySelector("#url").innerHTML = location.pathname.substr(1);
+		</script>
 	</body>
 </html>

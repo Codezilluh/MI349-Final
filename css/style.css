@@ -264,6 +264,10 @@ article .embed img {
 	margin-bottom: 5px;
 }
 
+article #url {
+	color: var(--darkgray);
+}
+
 ::selection {
 	background: var(--highlight);
 	color: var(--black);
