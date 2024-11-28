@@ -23,6 +23,7 @@ a {
 	color: var(--blue);
 	width: fit-content;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover {
