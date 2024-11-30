@@ -117,6 +117,25 @@ article {
 	position: relative;
 }
 
+article h2 {
+	width: fit-content;
+	padding-right: 10px;
+}
+
+article h2:hover .edit {
+	visibility: visible;
+}
+
+article h2 .edit {
+	background-image: url(../images/edit_icon.png);
+	display: inline-block;
+	visibility: hidden;
+	height: 24px;
+	width: 24px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
 article .paths {
 	margin-bottom: 20px;
 	display: flex;
