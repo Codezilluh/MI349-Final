@@ -5,7 +5,7 @@ addEventListener("DOMContentLoaded", () => {
 	const options = ["/index.html", "/most_viewed.html", "/most_edited.html"];
 
 	// Set the link href to a random article
-	random.href = options[Math.round(Math.random())];
+	random.href = options[Math.round(Math.random() * (options.length - 1))];
 
 	button.addEventListener("click", () => {
 		button.classList.toggle("active");
